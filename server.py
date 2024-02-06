@@ -19,3 +19,10 @@ def enrico():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/flamur')
+def flamur():
+    return 'Moin'
+
+if __name__ == '__main__':
+    app.run(debug=True)
