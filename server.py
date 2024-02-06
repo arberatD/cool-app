@@ -6,4 +6,4 @@ app = Flask(__name__)
 def test():
   return jsonify({"name": "Enrico"})
 
-app = Flask(__name__)
+
