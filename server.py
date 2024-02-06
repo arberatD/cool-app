@@ -1,12 +1,10 @@
-from flask import Flask, request, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/mein-endpunkt', methods=['POST'])
-def mein_endpunkt():
-    data = request.get_json()
-    # Verarbeiten Sie hier Ihre Daten
-    return jsonify(data), 200
+@app.route('/muhammed', methods=['GET'])
+def muhammed():
+    return "Hallo, Muhammed!", 200
 
 if __name__ == '__main__':
     app.run(debug=True)
